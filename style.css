@@ -1,0 +1,117 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    /* Colors */
+    /* Primary */
+    --primary-light-red: hsl(0, 100%, 67%);
+    --primary-orangey-yellow: hsl(39, 100%, 56%);
+    --primary-green-teal: hsl(166, 100%, 37%);
+    --primary-cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    /* Background */
+    --gradient-light-slate-blue: hsl(252, 100%, 67%);
+    --gradient-light-royal-blue: hsl(241, 81%, 54%);
+    /* Circle */
+    --gradient-violet-blue: hsla(256, 72%, 46%, 1);
+    --gradient-persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-pale-blue: hsl(221, 100%, 96%);
+    --neutral-light-lavender: hsl(241, 100%, 89%);
+    --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Typography */
+    /* Body Copy */
+    --body-font-size: 18px;
+
+    /* Font */
+    --font-family: "Hanken Grotesk", sans-serif;;
+    /* Changez la famille de police selon vos besoins */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: var(--body-font-size);
+    font-family: var(--font-family);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary {
+    display: flex;
+    max-width: 575px;
+    border-radius: 15px;
+    background-color: var(--neutral-white);
+}
+
+.summary-left{
+   background: linear-gradient(to bottom, var(--gradient-light-slate-blue), var(--gradient-light-royal-blue));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:   30px 40px;
+    gap: 25px;
+    border-radius: 15px;
+    color: var(--neutral-light-lavender);
+    width: 50%;
+}
+
+.summary-score {
+    background: linear-gradient(to bottom, var(--gradient-violet-blue), var(--gradient-persian-blue));
+    border-radius: 100% ;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.summary-score-number {
+    font-size: 3rem;
+    font-weight: 800;
+}
+.summary-right {
+    border-radius: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:   30px 40px;
+}
+
+
+
+
+
+.summary-right-task {
+    padding: 20px;
+    
+    border-radius: 10px;
+}
+
+
+
+
+.summary-right button {
+    width: 100%;
+    border-radius: 30px;
+    padding:  15px 10px ;
+    background-color: var(--neutral-dark-gray-blue);
+    border: 0;
+    color: var(--neutral-white);
+}
